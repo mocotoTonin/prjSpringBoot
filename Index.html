@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java com Spring Boot</title>
+    <!-- Link para Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /* Reset básico */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Poppins', Arial, sans-serif;
+        background-color: #ffffff;
+        color: #000000;
+        line-height: 1.6;
+        background-image: url(https://www.split.io/wp-content/uploads/BLOG-SpringBoot@2x-1920x960.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      header {
+        background-color: rgb(114, 181, 69);
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 4px solid #000000;
+      }
+
+      .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+      }
+
+      .logo-container img {
+        width: 80px;
+        height: auto;
+      }
+
+      .logo-container h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #000000;
+      }
+
+      .icon-container {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+      .menu-toggle {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+      }
+
+      .menu-toggle span {
+        width: 30px;
+        height: 3px;
+        background: #000000;
+        margin: 5px 0;
+      }
+
+      nav {
+        display: flex;
+        gap: 10px;
+      }
+
+      nav a {
+        font-size: 1rem;
+        color: #000000;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 0.5rem 1rem;
+        border: 2px solid transparent;
+        border-radius: 25px;
+        transition: all 0.3s;
+      }
+
+      nav a:hover {
+        background-color: #000000;
+        color: #fff;
+        border-color: #000000;
+      }
+
+      /* Estilos do menu móvel */
+      nav.mobile {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #ff9800;
+        width: 100%;
+        padding: 1rem 0;
+        border-top: 4px solid #000000;
+      }
+
+      nav.mobile a {
+        margin: 0.5rem 0;
+        text-align: center;
+      }
+
+      .menu-open nav.mobile {
+        display: flex;
+      }
+
+      main {
+        padding: 5rem;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .section1 {
+        margin-bottom: 5rem;
+        background: rgba(255, 255, 255, 0.3);
+        padding: 70px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+      }
+
+      .section2{
+        margin-bottom: 5rem;
+        background: rgba(255, 255, 255, 0.3);
+        padding: 70px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+      }
+
+      section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: #000000;
+      }
+
+      section p,
+      section ul {
+        font-size: 1.2rem;
+      }
+
+      footer {
+        background-color: rgb(114, 181, 69);
+        color: #000000;
+        text-align: center;
+        padding: 1rem 0;
+        border-top: 4px solid #000000;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      footer p {
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 768px) {
+        nav {
+          display: none;
+        }
+
+        .menu-toggle {
+          display: flex;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <h1>Java - Spring Boot!</h1>
+      </div>
+      <div class="icon-container">
+        <i class="fas fa-bars" onclick="toggleMenu()" title="Menu"></i>
+        <i class="fas fa-search" title="Pesquisar"></i>
+        <i class="fas fa-cog" title="Configurações"></i>
+      </div>
+      <nav>
+        <a href="/login.html">Roteiro/Pesquisa</a>
+        <a href="./singup.html">Vídeo</a>
+
+      </nav>
+      <nav class="mobile">
+        <a href="/login.html">Roteiro/Pesquisa</a>
+        <a href="./singup.html">Vídeo</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section1">
+        <h2>Java com Spring Boot</h2>
+        <p>
+            Spring Boot é uma estrutura Java de código aberto usada para programar aplicativos autônomos de nível de produção baseados em Spring com um pacote de bibliotecas que facilitam a inicialização e o gerenciamento de projetos.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Java Spring Boot- Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.body.classList.toggle('menu-open');
+      }
+    </script>
+  </body>
+</html>
